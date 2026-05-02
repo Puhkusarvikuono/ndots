@@ -14,6 +14,7 @@ return {
 				"tsx",
 				"html",
 				"css",
+                "nix",
 				"json",
 				"gitignore",
 				"go",
