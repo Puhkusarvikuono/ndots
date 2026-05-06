@@ -1,3 +1,1 @@
-# ndots
-
-dotfiles for nvim and nix
+nix and nvim configs
