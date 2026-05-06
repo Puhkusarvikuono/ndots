@@ -7,6 +7,7 @@
 			self.nixosModules.chromium
 			self.nixosModules.discord
 			self.nixosModules.neovim
+			self.nixosModules.starship
 		];
 
 		nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -101,6 +102,7 @@
                     python3
                     go
                     unzip
+		    gh
 		  ];
 
 
