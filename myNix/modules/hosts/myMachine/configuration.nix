@@ -6,7 +6,6 @@
 			self.nixosModules.niri
 			self.nixosModules.chromium
 			self.nixosModules.discord
-			self.nixosModules.neovim
 			self.nixosModules.starship
 		];
 
@@ -103,6 +102,8 @@
                     go
                     unzip
 		    gh
+		    nh
+		    self.packages.${pkgs.stdenv.hostPlatform.system}.myNeovim
 		  ];
 
 

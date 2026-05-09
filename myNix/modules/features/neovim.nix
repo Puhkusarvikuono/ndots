@@ -1,21 +1,30 @@
 { self, inputs, ... }: {
-	  flake.nixosModules.neovim = {
+	  flake.modules.neovim = {
     config,
     wlib,
     lib,
     pkgs,
     ...
   }: {
-
-	environment.systemPackages = with pkgs; [
-		self.packages.${pkgs.stdenv.hostPlatform.system}.myNeovim
-	];
-};
+	options = {};
+	config = {
+		settings.config_directory = "/home/nixis/github.com/ndots/myNix/modules/features/nvim";
+		specs.plugins = {
+			data = [
+				pkgs.vimPlugins.lz-n
+				pkgs.vimPlugins.snacks-nvim
+			];
+		};
+	};
+	};
 	perSystem = { pkgs, self', ... }: {
 		packages.myNeovim = inputs.wrapper-modules.wrappers.neovim.wrap {
 			inherit pkgs;
-			settings.config_directory = "/home/nixis/myNix/modules/features/nvim";
+			imports = [
+				self.modules.neovim
+			];
 		};
 
-};
+	};
 }
+
