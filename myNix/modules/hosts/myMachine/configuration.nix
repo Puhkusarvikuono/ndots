@@ -7,6 +7,7 @@
 			self.nixosModules.chromium
 			self.nixosModules.discord
 			self.nixosModules.starship
+            self.nixosModules.environment
 		];
 
 		nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -84,26 +85,6 @@
 		    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
 		    wget
 		    git
-		    cliphist
-		    zip
-		    killall
-		    fzf
-		    htop
-       		    btop
-                    fd
-                    zoxide
-                    ripgrep
-                    fastfetch
-                    tree-sitter
-                    yt-dlp
-                    imagemagick
-                    nil
-                    python3
-                    go
-                    unzip
-		    gh
-		    nh
-		    self.packages.${pkgs.stdenv.hostPlatform.system}.myNeovim
 		  ];
 
 
