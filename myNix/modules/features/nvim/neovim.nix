@@ -8,7 +8,7 @@
   }: {
 	options = {};
 	config = {
-		settings.config_directory = "/home/nixis/github.com/ndots/myNix/modules/features/nvim";
+		settings.config_directory = ./.;
 		specs.plugins = {
 			data = [
 				pkgs.vimPlugins.lz-n
