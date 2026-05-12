@@ -6,12 +6,14 @@ multiple hardware
 
 ## Fix:
 
-- broken nvim
 - unnecessary config files that can be wrapped (.bashrc etc.)
+- kitty behaviour
+- nh, kitty wrap
 
 ## Add:
 
 - git stuff
+- bash to fish
 - wrap some bash/shell stuff
 - nvim wrap config
 - noctalia wrap config
@@ -25,4 +27,4 @@ multiple hardware
 - user setup
 - maybe btrfs with luks, possible with disko
 - secureboot?
-
+- check multiple hosts
