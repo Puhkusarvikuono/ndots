@@ -12,6 +12,10 @@
 
 		nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+        # Display manager
+
+        services.displayManager.ly.enable = true;
+
 		  # Battery
 
   		  services.upower.enable = true;
