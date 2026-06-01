@@ -1,10 +1,11 @@
 { self, inputs, ...}: {
   flake.nixosModules.chromium = {pkgs, lib, ...}: {
-    programs.chromium.enable = true;
+    programs.chromium = {
+        enable = true;
+    };
 
     environment.systemPackages = [
-      pkgs.ungoogled-chromium
+        inputs.helium.defaultPackage.${pkgs.stdenv.hostPlatform.system}
     ];
-
   };
 }
