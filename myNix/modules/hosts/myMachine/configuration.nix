@@ -6,7 +6,6 @@
 			self.nixosModules.niri
 			self.nixosModules.chromium
 			self.nixosModules.discord
-			self.nixosModules.starship
             self.nixosModules.environment
 		];
 
@@ -71,6 +70,7 @@
 		    description = "nixis";
 		    extraGroups = [ "networkmanager" "wheel" ];
 		    packages = with pkgs; [];
+            shell = pkgs.fish;
 		  };
 
 		  # Allow unfree packages

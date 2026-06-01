@@ -14,7 +14,7 @@
                     (lib.getExe self'.packages.myNoctalia)
                 ];
 
-		
+
                 xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
 
                 input = {
@@ -40,8 +40,8 @@
 			xcursor-theme = "breeze_cursors";
 			xcursor-size = 48;
 		};
-		
-		prefer-no-csd = {};		
+
+		prefer-no-csd = {};
 
                 layout = {
 		    center-focused-column = "never";
@@ -53,7 +53,7 @@
                 };
 
                 binds = {
-		    "Mod+X".spawn-sh = lib.getExe self'.packages.myKitty;
+		    "Mod+X".spawn-sh = "kitty";
                     "Mod+W".close-window = {};
                     "Mod+F".maximize-column = {};
                     "Mod+G".fullscreen-window = {};
@@ -61,7 +61,7 @@
                     "Mod+C".center-column = {};
 		    "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
 
-		    "Mod+B".spawn-sh = "chromium";
+		    "Mod+B".spawn-sh = "helium";
 
 
 
