@@ -1,0 +1,3 @@
+{
+  flake.wallpaper = ./futuristicAncientTree.png;
+}
