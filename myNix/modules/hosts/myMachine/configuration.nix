@@ -6,7 +6,7 @@
 			self.nixosModules.niri
 			self.nixosModules.chromium
 			self.nixosModules.discord
-            self.nixosModules.environment
+            self.nixosModules.desktop
             self.nixosModules.themes
 		];
 

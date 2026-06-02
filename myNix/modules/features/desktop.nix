@@ -1,5 +1,5 @@
 { self, inputs, ...}: {
-  flake.nixosModules.environment = {pkgs, lib, ...}: {
+  flake.nixosModules.desktop = {pkgs, lib, ...}: {
 
 	environment.systemPackages = with pkgs; [
         cliphist
