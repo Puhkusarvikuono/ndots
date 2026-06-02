@@ -7,6 +7,7 @@
 			self.nixosModules.chromium
 			self.nixosModules.discord
             self.nixosModules.environment
+            self.nixosModules.themes
 		];
 
 		nix.settings.experimental-features = [ "nix-command" "flakes" ];
