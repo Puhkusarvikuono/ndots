@@ -4,7 +4,7 @@
         enable = true;
         extensions = [
             "ghmbeldphafepmbegfdlkpapadhbakde" # Proton Pass
-            "eimadpbcbfnmbkopoojfekhnkhdbieeh;https://clients2.google.com/service/update2/crx" # dark reader
+            "eimadpbcbfnmbkopoojfekhnkhdbieeh" # dark reader
           ];
     };
 
