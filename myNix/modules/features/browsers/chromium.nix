@@ -9,7 +9,7 @@
     };
 
     environment.systemPackages = [
-      pkgs.ungoogled-chromium
+    	inputs.helium.defaultPackage.${pkgs.stdenv.hostPlatform.system}
     ];
   };
 }
