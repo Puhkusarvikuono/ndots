@@ -23,14 +23,8 @@
         bat
         man
         eza
-        self.packages.${pkgs.stdenv.hostPlatform.system}.myNeovim
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
    ];
-    programs.neovim = {
-           enable = true;
-           defaultEditor = true;
-           package = self.packages.${pkgs.stdenv.hostPlatform.system}.myNeovim;
-    };
 
     programs.fish = {
         enable = true;

@@ -27,9 +27,13 @@
       package = pkgs.fish;
       runtimeInputs = [
         pkgs.zoxide
+	self'.packages.neovimFull
       ];
       flags = {
         "-C" = "source ${fishConf}";
+      };
+      env = {
+      	EDITOR = lib.getExe self'.packages.neovimFull;
       };
     };
   };

@@ -4,6 +4,15 @@
     helium.url = "github:FKouhai/helium2nix/main";
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
+    plugins-lze = {
+    	url = "github:BirdeeHub/lze";
+    	flake = false;
+    };
+    plugins-lzextras = {
+    	url = "github:BirdeeHub/lzextras";
+	flake = false;
+    };
+
     stylix = {
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
