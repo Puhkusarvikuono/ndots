@@ -4,7 +4,7 @@
 		imports = [
 			self.nixosModules.myMachineHardware
 			self.nixosModules.niri
-			self.nixosModules.chromium
+			self.nixosModules.browsers
 			self.nixosModules.discord
             self.nixosModules.desktop
             self.nixosModules.themes
