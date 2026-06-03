@@ -10,10 +10,7 @@
 	config = {
 		settings.config_directory = ./.;
 		specs.plugins = {
-			data = [
-				pkgs.vimPlugins.lz-n
-				pkgs.vimPlugins.snacks-nvim
-			];
+			data = [];
 		};
 	};
 	};
