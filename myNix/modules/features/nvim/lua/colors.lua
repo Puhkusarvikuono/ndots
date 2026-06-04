@@ -1,5 +1,4 @@
-
-  require('lze').load {
+nixInfo.lze.load {
     {
     -- lze specs need a name
     "trigger_colorscheme",

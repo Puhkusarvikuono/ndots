@@ -22,10 +22,10 @@
   };
 
   # choose a directory for your config.
-  config.settings.config_directory = ./.;
+  # config.settings.config_directory = ./.;
   # you can also use an impure path!
   # config.settings.config_directory = lib.generators.mkLuaInline "vim.fn.stdpath('config')";
-  # config.settings.config_directory = "/home/<USER>/.config/nvim";
+   config.settings.config_directory = "/home/nixis/github.com/ndots/myNix/modules/features/nvim";
   # If you do that, it will not be provisioned by nix, but it will have normal reload for quick edits!
 
   # If you want to install multiple neovim derivations via home.packages or environment.systemPackages
