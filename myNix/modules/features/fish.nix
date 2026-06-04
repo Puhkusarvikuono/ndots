@@ -18,6 +18,8 @@
         alias ga="git add"
         alias gc="git commit -m"
         alias ff="fastfetch"
+        ${lib.getExe pkgs.any-nix-shell} fish --info-right | source
+        ${lib.getExe pkgs.direnv} hook fish | source
         ${lib.getExe self'.packages.myStarship} init fish | source
         ${lib.getExe pkgs.zoxide} init fish | source
       '';
