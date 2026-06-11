@@ -15,8 +15,10 @@
         yt-dlp
         imagemagick
         nil
-        python3
-        go
+        statix
+        manix
+        nix-inspect
+        direnv
         unzip
         gh
         nh
