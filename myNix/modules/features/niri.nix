@@ -72,7 +72,7 @@
             "Mod+Shift+F".toggle-window-floating = { };
             "Mod+C".center-column = { };
             "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
-
+            "Mod+O".spawn-sh = "obsidian";
             "Mod+B".spawn-sh = "helium";
             "Mod+Shift+B".spawn-sh = "librewolf";
 
