@@ -19,6 +19,17 @@
             alias ga="git add"
             alias gc="git commit -m"
             alias ff="fastfetch"
+
+            function y
+              set tmp (mktemp -t "yazi-cwd.XXXXXX")
+              command yazi $argv --cwd-file="$tmp"
+              if read -z cwd < "$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
+                builtin cd -- "$cwd"
+              end
+              command rm -f -- "$tmp"
+            end
+
+
             ${lib.getExe pkgs.any-nix-shell} fish --info-right | source
             ${lib.getExe pkgs.direnv} hook fish | source
             ${lib.getExe self'.packages.myStarship} init fish | source
