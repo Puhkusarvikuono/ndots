@@ -1,9 +1,12 @@
-{ self, inputs, ...}: {
-  flake.nixosModules.browsers = {pkgs, lib, ...}: {
+{ self, inputs, ... }:
+{
+  flake.nixosModules.browsers =
+    { pkgs, lib, ... }:
+    {
 
-    imports = [
+      imports = [
         self.nixosModules.chromium
-	self.nixosModules.firefox
-    ];
-};
+        self.nixosModules.firefox
+      ];
+    };
 }

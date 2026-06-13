@@ -1,9 +1,12 @@
-{ self, inputs, ... }: {
-	perSystem = { pkgs, ... }: {
-		packages.myStarship = inputs.wrapper-modules.wrappers.noctalia-shell.wrap {
-	inherit pkgs;
-    package = pkgs.starship;
-    settings = {
+{ self, inputs, ... }:
+{
+  perSystem =
+    { pkgs, ... }:
+    {
+      packages.myStarship = inputs.wrapper-modules.wrappers.noctalia-shell.wrap {
+        inherit pkgs;
+        package = pkgs.starship;
+        settings = {
           format = "[╭─](242)$os$directory$git_branch$git_status$fill$status$cmd_duration$jobs$direnv$nix_shell\n[╰─](242) $character";
           add_newline = false;
 
@@ -107,4 +110,4 @@
         };
       };
     };
- }
+}

@@ -1,8 +1,10 @@
-{ self, inputs, ...}: {
-  flake.nixosModules.themes = {pkgs, lib, ...}: {
+{ self, inputs, ... }:
+{
+  flake.nixosModules.themes =
+    { pkgs, lib, ... }:
+    {
       imports = [
         self.nixosModules.gtk
       ];
-};
+    };
 }
-

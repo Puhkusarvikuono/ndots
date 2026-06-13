@@ -1,7 +1,10 @@
-{ self, inputs, ...}: {
-  flake.nixosModules.desktop = {pkgs, lib, ...}: {
+{ self, inputs, ... }:
+{
+  flake.nixosModules.desktop =
+    { pkgs, lib, ... }:
+    {
 
-	environment.systemPackages = with pkgs; [
+      environment.systemPackages = with pkgs; [
         cliphist
         zip
         killall
@@ -26,11 +29,11 @@
         man
         eza
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
-   ];
+      ];
 
-    programs.fish = {
+      programs.fish = {
         enable = true;
         package = self.packages.${pkgs.stdenv.hostPlatform.system}.fish;
+      };
     };
-  };
 }
