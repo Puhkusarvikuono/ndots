@@ -4,7 +4,7 @@
     { pkgs, ... }:
     {
       environment.systemPackages = [
-        pkgs.proton-vpn-cli
+        pkgs.proton-vpn
         pkgs.proton-pass
         pkgs.obsidian
       ];

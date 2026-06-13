@@ -12,6 +12,7 @@
         self.nixosModules.discord
         self.nixosModules.desktop
         self.nixosModules.themes
+        self.nixosModules.private
       ];
 
       nix.settings.experimental-features = [
