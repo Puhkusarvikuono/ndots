@@ -27,6 +27,7 @@
         nh
         bat
         man
+        pcmanfm
         eza
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
       ];
