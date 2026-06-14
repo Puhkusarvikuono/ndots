@@ -31,6 +31,8 @@
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
       ];
 
+      security.polkit.enable = true;
+
       programs.fish = {
         enable = true;
         package = self.packages.${pkgs.stdenv.hostPlatform.system}.fish;

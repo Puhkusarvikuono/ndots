@@ -27,6 +27,9 @@
       # Battery
 
       services.upower.enable = true;
+      # Firmware
+
+      hardware.enableAllFirmware = true;
 
       # Bluetooth
 
