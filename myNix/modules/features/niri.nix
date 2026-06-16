@@ -49,8 +49,8 @@
           };
 
           cursor = {
-            xcursor-theme = "breeze_cursors";
-            xcursor-size = 48;
+            xcursor-theme = "Bibata-Modern-Classic";
+            xcursor-size = 24;
           };
 
           prefer-no-csd = { };

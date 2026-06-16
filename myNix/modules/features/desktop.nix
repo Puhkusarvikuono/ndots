@@ -28,6 +28,7 @@
         bat
         man
         pcmanfm
+        bibata-cursors
         eza
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
       ];
