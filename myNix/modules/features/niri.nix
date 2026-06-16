@@ -40,6 +40,7 @@
             };
 
             touchpad = {
+              scroll-factor = 0.7;
               accel-speed = 0.1;
               tap = { };
             };
