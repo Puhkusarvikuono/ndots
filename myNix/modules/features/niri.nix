@@ -40,6 +40,7 @@
             };
 
             touchpad = {
+              accel-speed = 0.1;
               tap = { };
             };
 
@@ -65,6 +66,10 @@
           };
 
           binds = {
+            # Overview
+
+            "Mod+Return".toggle-overview = { };
+            
             "Mod+X".spawn-sh = "kitty";
             "Mod+W".close-window = { };
             "Mod+F".maximize-column = { };
@@ -76,7 +81,7 @@
             "Mod+B".spawn-sh = "helium";
             "Mod+E".spawn-sh = "pcmanfm";
             "Mod+Shift+B".spawn-sh = "librewolf";
-
+            "Mod+Shift+E".quit = {};
             "Mod+H".focus-column-left = { };
             "Mod+L".focus-column-right = { };
             "Mod+K".focus-window-up = { };
