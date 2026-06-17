@@ -71,7 +71,6 @@
         imagemagick
         unzip
         gh
-        nh
         bat
         man
         pcmanfm
@@ -82,7 +81,7 @@
 
       programs.fish = {
         enable = true;
-        package = self.packages.${pkgs.stdenv.hostPlatform.system}.fish;
+        package = self.packages.${pkgs.stdenv.hostPlatform.system}.environment;
       };
 
       programs.yazi = {
