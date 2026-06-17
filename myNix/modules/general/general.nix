@@ -1,7 +1,7 @@
 { self, inputs, ... }:
 {
   flake.nixosModules.general =
-    { pkgs, lib, ... }:
+    { pkgs, config, lib, ... }:
     {
       imports = [
         self.nixosModules.gtk
@@ -15,7 +15,7 @@
         "networkmanager"
         "wheel"
       ];
-      shell = pkgs.fish;
+      shell = self.packages.${pkgs.stdenv.hostPlatform.system}.environment;
     };
 };
 }

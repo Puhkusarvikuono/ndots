@@ -76,11 +76,12 @@
     };
   };
 
-  perSystem = {pkgs, ...}: {
+  perSystem = {lib, self', pkgs, ...}: {
     packages.kitty =
       (inputs.wrappers.wrapperModules.kitty.apply {
         inherit pkgs;
         imports = [self.wrappersModules.kitty];
+        shell = lib.getExe self'.packages.environment;
       }).wrapper;
   };
 }

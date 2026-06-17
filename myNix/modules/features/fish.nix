@@ -1,8 +1,7 @@
-{ inputs, self, ... }:
+{ inputs, lib, ... }:
 {
   perSystem =
     {
-      lib,
       pkgs,
       self',
       ...
@@ -28,10 +27,12 @@
               end
               command rm -f -- "$tmp"
             end
-
+            
+            if type -q direnv
+              direnv hook fish | source
+            end
 
             ${lib.getExe pkgs.any-nix-shell} fish --info-right | source
-            ${lib.getExe pkgs.direnv} hook fish | source
             ${lib.getExe self'.packages.myStarship} init fish | source
             ${lib.getExe pkgs.zoxide} init fish | source
           '';
@@ -42,13 +43,9 @@
         package = pkgs.fish;
         runtimeInputs = [
           pkgs.zoxide
-          self'.packages.neovimFull
         ];
         flags = {
           "-C" = "source ${fishConf}";
-        };
-        env = {
-          EDITOR = lib.getExe self'.packages.neovimFull;
         };
       };
     };
