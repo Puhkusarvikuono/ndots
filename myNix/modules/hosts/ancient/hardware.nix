@@ -1,7 +1,7 @@
 { self, inputs, ... }:
 {
 
-  flake.nixosModules.myMachineHardware =
+  flake.nixosModules.ancientHardware =
     {
       config,
       lib,

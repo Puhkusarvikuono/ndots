@@ -1,11 +1,11 @@
 { self, inputs, ... }:
 {
 
-  flake.nixosModules.myMachineConfiguration =
+  flake.nixosModules.ancientConfiguration =
     { pkgs, lib, ... }:
     {
       imports = [
-        self.nixosModules.myMachineHardware
+        self.nixosModules.ancientHardware
         self.nixosModules.niri
         self.nixosModules.gaming
         self.nixosModules.discord
