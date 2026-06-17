@@ -110,12 +110,6 @@
             "Mod+Shift+5".move-column-to-workspace = "w4";
           };
 
-          outputs = {
-            "eDP-1" = {
-              scale = 2.5;
-            };
-          };
-
           workspaces =
             let
               settings = {
