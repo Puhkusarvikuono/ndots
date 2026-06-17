@@ -4,6 +4,56 @@
     { pkgs, lib, ... }:
     {
 
+      imports = [
+        self.nixosModules.gtk
+        self.nixosModules.firefox
+        self.nixosModules.chromium
+      ];
+
+      fonts.packages = with pkgs; [
+        nerd-fonts.jetbrains-mono
+        ubuntu-sans
+        cm_unicode
+        corefonts
+        unifont
+      ];
+      
+      fonts.fontconfig.defaultFonts = {
+        serif = ["Ubuntu Sans"];
+        sansSerif = ["Ubuntu Sans"];
+        monospace = ["JetBrainsMono Nerd Font"];
+      };
+
+      services.upower.enable = true;
+      security.polkit.enable = true;
+      hardware = {
+        enableAllFirmware = true;
+        bluetooth.enable = true;
+        bluetooth.powerOnBoot = true;
+      };
+
+      time.timeZone = "Europe/Helsinki";
+      i18n.defaultLocale = "en_US.UTF-8";
+      i18n.extraLocaleSettings = {
+        LC_ADDRESS = "fi_FI.UTF-8";
+        LC_IDENTIFICATION = "fi_FI.UTF-8";
+        LC_MEASUREMENT = "fi_FI.UTF-8";
+        LC_MONETARY = "fi_FI.UTF-8";
+        LC_NAME = "fi_FI.UTF-8";
+        LC_NUMERIC = "fi_FI.UTF-8";
+        LC_PAPER = "fi_FI.UTF-8";
+        LC_TELEPHONE = "fi_FI.UTF-8";
+        LC_TIME = "fi_FI.UTF-8";
+      };
+
+      services.xserver.xkb = {
+        layout = "fi";
+        variant = "nodeadkeys";
+      };
+
+      console.keyMap = "fi";
+
+      
       environment.systemPackages = with pkgs; [
         cliphist
         zip
@@ -12,16 +62,13 @@
         htop
         btop
         fd
+        vim
+        git
+        wget
         ripgrep
         fastfetch
-        tree-sitter
         yt-dlp
         imagemagick
-        nil
-        statix
-        manix
-        nix-inspect
-        direnv
         unzip
         gh
         nh
@@ -32,8 +79,6 @@
         eza
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
       ];
-
-      security.polkit.enable = true;
 
       programs.fish = {
         enable = true;
