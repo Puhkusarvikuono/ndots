@@ -71,7 +71,8 @@
 
             "Mod+Return".toggle-overview = { };
             
-            "Mod+X".spawn-sh = "kitty";
+            "Mod+X".spawn-sh = "${lib.getExe self'.packages.kitty}";
+            "Mod+Shift+X".spawn-sh = "${lib.getExe self'.packages.alacritty}";
             "Mod+W".close-window = { };
             "Mod+F".maximize-column = { };
             "Mod+G".fullscreen-window = { };
