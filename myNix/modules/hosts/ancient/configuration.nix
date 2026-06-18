@@ -6,12 +6,13 @@
     {
       imports = [
         self.nixosModules.ancientHardware
-        self.nixosModules.niri
+        self.nixosModules.base
+        self.nixosModules.general
+        self.nixosModules.desktop
         self.nixosModules.gaming
         self.nixosModules.discord
-        self.nixosModules.desktop
         self.nixosModules.private
-        self.nixosModules.general
+        self.nixosModules.niri
       ];
 
       # Display manager

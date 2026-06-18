@@ -1,3 +1,4 @@
+{self, config, ...}: 
 {
-  flake.wallpaper = ./futuristicAncientTree.png;
+  flake.wallpaper = ./cyberpunk.jpg;
 }

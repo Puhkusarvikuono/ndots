@@ -27,7 +27,6 @@
 
           cursor_trail = 3;
         };
-        themeFile = "GruvboxMaterialDarkHard";
       };
     };
 }

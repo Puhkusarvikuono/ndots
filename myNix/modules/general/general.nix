@@ -4,18 +4,20 @@
     { pkgs, config, lib, ... }:
     {
       imports = [
-        self.nixosModules.gtk
         self.nixosModules.nix
+        self.nixosModules.hjem
+        self.nixosModules.stylix
       ];
 
-    users.users.nixis = {
+    users.users.${config.preferences.username} = {
       isNormalUser = true;
-      description = "nixis";
+      description = "${config.preferences.username}'s account";
       extraGroups = [
         "networkmanager"
         "wheel"
       ];
       shell = self.packages.${pkgs.stdenv.hostPlatform.system}.environment;
     };
+
 };
 }

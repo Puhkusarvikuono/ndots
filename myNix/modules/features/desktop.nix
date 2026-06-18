@@ -3,9 +3,7 @@
   flake.nixosModules.desktop =
     { pkgs, lib, ... }:
     {
-
       imports = [
-        self.nixosModules.gtk
         self.nixosModules.firefox
         self.nixosModules.chromium
       ];
@@ -72,9 +70,8 @@
         unzip
         gh
         bat
+        nautilus
         man
-        pcmanfm
-        bibata-cursors
         eza
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
       ];

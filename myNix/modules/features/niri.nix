@@ -14,8 +14,9 @@
       pkgs,
       lib,
       self',
+      config,
       ...
-    }:
+    }: 
     {
       packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
         inherit pkgs;
@@ -50,11 +51,6 @@
             };
           };
 
-          cursor = {
-            xcursor-theme = "Bibata-Modern-Classic";
-            xcursor-size = 24;
-          };
-
           prefer-no-csd = { };
 
           layout = {
@@ -81,7 +77,7 @@
             "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
             "Mod+O".spawn-sh = "obsidian";
             "Mod+B".spawn-sh = "helium";
-            "Mod+E".spawn-sh = "pcmanfm";
+            "Mod+E".spawn-sh = "nautilus";
             "Mod+Shift+B".spawn-sh = "librewolf";
             "Mod+Shift+E".quit = {};
             "Mod+H".focus-column-left = { };
