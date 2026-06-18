@@ -32,4 +32,9 @@ nixInfo.lze.load {
     auto_enable = true,
     colorscheme = "moonfly",
   },
+  {
+    "rose-pine",
+    auto_enable = true,
+    colorscheme = "rose-pine",
+  },
 }

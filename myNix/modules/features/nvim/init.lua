@@ -93,6 +93,7 @@ end)
 
 require("set")
 require("keymap")
+require("colormypencils")
 require("colors")
 
 -- NOTE: You will likely want to break this up into more files.
