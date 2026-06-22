@@ -1,3 +1,0 @@
-{
-  flake.cyberpunk = ./cyberpunk.jpg;
-}

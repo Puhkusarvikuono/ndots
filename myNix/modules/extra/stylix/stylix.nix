@@ -13,6 +13,7 @@
       imports = [
         inputs.stylix.nixosModules.stylix
         self.nixosModules.stylixHjem
+        self.nixosModules.assets
       ];
 
       stylix = {

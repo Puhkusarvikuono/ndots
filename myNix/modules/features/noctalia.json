@@ -305,9 +305,9 @@
       ]
     },
     "wallpaper": {
-      "enabled": false,
+      "enabled": true,
       "overviewEnabled": false,
-      "directory": "/home/nixis/Pictures/Wallpapers",
+      "directory": "/home/nixis/.config/backgrounds",
       "monitorDirectories": [],
       "enableMultiMonitorDirectories": false,
       "showHiddenFiles": false,
