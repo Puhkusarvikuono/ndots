@@ -28,6 +28,11 @@
         enableAllFirmware = true;
         bluetooth.enable = true;
         bluetooth.powerOnBoot = true;
+
+        opengl = {
+          enable = true;
+          driSupport32Bit = true;
+        };
       };
 
       time.timeZone = "Europe/Helsinki";
@@ -73,8 +78,6 @@
         nautilus
         man
         eza
-        gtk3
-        gtk4
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
       ];
 

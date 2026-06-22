@@ -209,7 +209,7 @@
         # GTK — mirrors stylix/hm/cursor.nix + modules/gtk/hm.nix
         ".config/gtk-3.0/settings.ini".text = ''
           [Settings]
-          gtk-application-prefer-dark-mode = ${if dark then "1" else "0"}
+          gtk-application-prefer-dark-theme = ${if dark then "true" else "false"}
           gtk-cursor-theme-name = ${cursorName}
           gtk-cursor-theme-size = ${cursorSize}
           gtk-font-name = ${fontName}
@@ -218,7 +218,7 @@
         '';
         ".config/gtk-4.0/settings.ini".text = ''
           [Settings]
-          gtk-application-prefer-dark-mode = ${if dark then "1" else "0"}
+          gtk-application-prefer-dark-theme = ${if dark then "true" else "false"}
           gtk-cursor-theme-name = ${cursorName}
           gtk-cursor-theme-size = ${cursorSize}
           gtk-font-name = ${fontName}

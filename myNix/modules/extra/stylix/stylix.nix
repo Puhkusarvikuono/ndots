@@ -14,6 +14,8 @@
         inputs.stylix.nixosModules.stylix
         self.nixosModules.stylixHjem
         self.nixosModules.assets
+        self.nixosModules.xdg
+        self.nixosModules.gtk
       ];
 
       stylix = {
