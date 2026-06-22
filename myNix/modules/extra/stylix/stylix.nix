@@ -54,9 +54,9 @@
 
         icons = {
           enable = true;
-          package = pkgs.gruvbox-plus-icons;
-          dark = "Gruvbox-Plus-Dark";
-          light = "Gruvbox-Plus-Light";
+          package = pkgs.rose-pine-icon-theme;
+          dark = "rose-pine-moon";
+          light = "rose-pine-moon";
         };
 
         opacity.applications = 0.8;

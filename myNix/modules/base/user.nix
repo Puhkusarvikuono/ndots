@@ -9,7 +9,7 @@
         };
         colorScheme = lib.mkOption {
           type = lib.types.str;
-          default = "tokyo-night-dark";
+          default = "rose-pine-moon";
         }; 
       };
     };
