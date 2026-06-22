@@ -15,6 +15,7 @@
                 lockAll = false;
                 settings = {
                   "org/gnome/desktop/interface" = {
+                    icon-theme = "Gruvbox-Plus-Dark";
                     color-scheme = "prefer-dark";
                   };
                 };
@@ -26,6 +27,7 @@
     };
 
     environment.systemPackages = [
+      pkgs.gruvbox-plus-icons
       pkgs.gtk3
       pkgs.gtk4
     ];

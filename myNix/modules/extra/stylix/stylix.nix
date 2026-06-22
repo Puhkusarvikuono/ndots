@@ -54,8 +54,9 @@
 
         icons = {
           enable = true;
-          package = pkgs.kora-icon-theme;
-          dark = "kora";
+          package = pkgs.gruvbox-plus-icons;
+          dark = "Gruvbox-Plus-Dark";
+          light = "Gruvbox-Plus-Light";
         };
 
         opacity.applications = 0.8;
