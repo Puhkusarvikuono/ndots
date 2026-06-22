@@ -73,6 +73,8 @@
         nautilus
         man
         eza
+        gtk3
+        gtk4
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
       ];
 
