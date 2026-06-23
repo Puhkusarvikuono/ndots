@@ -75,7 +75,7 @@
             "Mod+O".spawn-sh = "obsidian";
             "Mod+B".spawn-sh = "helium";
             "Mod+E".spawn-sh = "nautilus";
-            "Mod+Shift+B".spawn-sh = "librewolf";
+            "Mod+Shift+B".spawn-sh = "firefox";
             "Mod+Shift+E".quit = {};
             "Mod+H".focus-column-left = { };
             "Mod+L".focus-column-right = { };

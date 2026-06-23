@@ -5,7 +5,7 @@
     {
       programs.firefox = {
         enable = true;
-        package = pkgs.librewolf;
+        #        package = pkgs.librewolf;
         policies = {
           DisableTelemetry = true;
           DisableFirefoxStudies = true;
