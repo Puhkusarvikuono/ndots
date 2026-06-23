@@ -19,7 +19,16 @@
 
       services.displayManager.ly.enable = true;
 
-      hardware.graphics.enable = true;
+      hardware.graphics = {
+        enable = true;
+        enable32Bit = true;
+        extraPackages = with pkgs; [
+          intel-media-driver
+          intel-vaapi-driver
+          vpl-gpu-rt
+        ];
+      };
+
 
       # Bootloader.
       boot.loader.systemd-boot.enable = true;
