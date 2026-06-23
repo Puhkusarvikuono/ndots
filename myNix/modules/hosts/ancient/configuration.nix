@@ -29,6 +29,16 @@
         ];
       };
 
+      services = {
+        fwupd.enable = lib.mkDefault true;
+        thermald.enable = lib.mkDefault true;
+      };
+
+      boot = {
+        kernelModules = [
+          "kvm-intel"
+        ];
+      };
 
       # Bootloader.
       boot.loader.systemd-boot.enable = true;
