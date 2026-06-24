@@ -60,23 +60,32 @@
           };
 
           binds = {
-            # Overview
-
+            # toggle overview 
             "Mod+Return".toggle-overview = { };
             
+            # terminal
             "Mod+X".spawn-sh = "${lib.getExe self'.packages.kitty}";
             "Mod+Shift+X".spawn-sh = "${lib.getExe self'.packages.alacritty}";
+
+            # window control
             "Mod+W".close-window = { };
             "Mod+F".maximize-column = { };
             "Mod+G".fullscreen-window = { };
             "Mod+Shift+F".toggle-window-floating = { };
             "Mod+C".center-column = { };
+
+            # app launcher
             "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
+            
             "Mod+O".spawn-sh = "obsidian";
             "Mod+B".spawn-sh = "helium";
             "Mod+E".spawn-sh = "nautilus";
             "Mod+Shift+B".spawn-sh = "firefox";
+            
+            # quit niri
             "Mod+Shift+E".quit = {};
+            
+            # workspace window
             "Mod+H".focus-column-left = { };
             "Mod+L".focus-column-right = { };
             "Mod+K".focus-window-up = { };
