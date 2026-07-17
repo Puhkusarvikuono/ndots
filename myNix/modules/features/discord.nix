@@ -5,7 +5,6 @@
     { pkgs, libs, ... }:
     {
       environment.systemPackages = [
-        pkgs.vesktop
         pkgs.discord
       ];
 
