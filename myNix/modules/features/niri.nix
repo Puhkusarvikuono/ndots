@@ -80,7 +80,7 @@
             "Mod+O".spawn-sh = "obsidian";
             "Mod+B".spawn-sh = "helium";
             "Mod+E".spawn-sh = "nautilus";
-            "Mod+Shift+B".spawn-sh = "firefox";
+            "Mod+Shift+B".spawn-sh = "librewolf";
             
             # quit niri
             "Mod+Shift+E".quit = {};
