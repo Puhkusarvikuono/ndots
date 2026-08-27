@@ -24,6 +24,9 @@
           spawn-at-startup = [
             (lib.getExe self'.packages.myNoctalia)
           ];
+          spawn-sh-at-startup = [
+            "protonvpn-app"
+          ];
 
           xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
 
