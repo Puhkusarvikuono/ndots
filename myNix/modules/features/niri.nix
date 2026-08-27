@@ -78,7 +78,7 @@
             "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
             
             "Mod+O".spawn-sh = "obsidian";
-            "Mod+B".spawn-sh = "helium";
+            "Mod+B".spawn-sh = "brave";
             "Mod+E".spawn-sh = "nautilus";
             "Mod+Shift+B".spawn-sh = "librewolf";
             
