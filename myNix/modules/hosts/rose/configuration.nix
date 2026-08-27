@@ -18,11 +18,14 @@
       # Display manager
 
       services.displayManager.ly.enable = true;
+      services.thermald.enable = true;
+      services.auto-cpufreq.enable = true;
 
       hardware.graphics = {
         enable = true;
         enable32Bit = true;
       };
+
 
       # Bootloader.
       boot.loader.systemd-boot.enable = true;
