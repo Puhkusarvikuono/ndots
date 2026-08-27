@@ -195,7 +195,7 @@
       "screenOverrides": []
     },
     "general": {
-      "avatarImage": "/home/nixis/.face",
+      "avatarImage": "~/.face",
       "dimmerOpacity": 0.2,
       "showScreenCorners": false,
       "forceBlackScreenCorners": false,
@@ -307,7 +307,7 @@
     "wallpaper": {
       "enabled": true,
       "overviewEnabled": false,
-      "directory": "/home/nixis/.config/backgrounds",
+      "directory": "~/.config/backgrounds",
       "monitorDirectories": [],
       "enableMultiMonitorDirectories": false,
       "showHiddenFiles": false,
@@ -318,9 +318,9 @@
       "fillColor": "#000000",
       "useSolidColor": false,
       "solidColor": "#1a1a2e",
-      "automationEnabled": false,
+      "automationEnabled": true,
       "wallpaperChangeMode": "random",
-      "randomIntervalSec": 300,
+      "randomIntervalSec": 1200,
       "transitionDuration": 1500,
       "transitionType": [
         "fade",
@@ -703,7 +703,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixis/.config/backgrounds/cyberpunk.jpg"
+      "eDP-1": "~/.config/backgrounds/cyberpunk.jpg"
     },
     "desktopWidgetsEditMode": false,
     "display": {
