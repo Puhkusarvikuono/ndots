@@ -28,11 +28,6 @@
         enableAllFirmware = true;
         bluetooth.enable = true;
         bluetooth.powerOnBoot = true;
-
-        opengl = {
-          enable = true;
-          driSupport32Bit = true;
-        };
       };
 
       time.timeZone = "Europe/Helsinki";
