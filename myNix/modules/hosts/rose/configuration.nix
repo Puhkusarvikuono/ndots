@@ -12,6 +12,7 @@
         self.nixosModules.gaming
         self.nixosModules.discord
         self.nixosModules.private
+        self.nixosModules.study
         self.nixosModules.niri
       ];
 
