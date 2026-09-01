@@ -41,9 +41,11 @@
             };
 
             touchpad = {
-              scroll-factor = 0.7;
+              dwt = { };
+              scroll-factor = 0.5;
               accel-speed = 0.1;
               tap = { };
+              disabled-on-external-mouse = { };
             };
 
             mouse = {
