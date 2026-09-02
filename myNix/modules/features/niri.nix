@@ -78,14 +78,15 @@
             "Mod+G".fullscreen-window = { };
             "Mod+Shift+F".toggle-window-floating = { };
             "Mod+C".center-column = { };
+            "Mod+Shift+K".show-hotkey-overlay = { };
 
             # app launcher
             "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
             
             "Mod+O".spawn-sh = "obsidian";
-            "Mod+B".spawn-sh = "brave";
-            "Mod+E".spawn-sh = "nautilus";
-            "Mod+Shift+B".spawn-sh = "librewolf";
+            "Mod+B".spawn-sh = "${lib.getExe pkgs.brave}";
+            "Mod+E".spawn-sh = "${lib.getExe pkgs.nautilus}";
+            "Mod+Shift+B".spawn-sh = "${lib.getExe pkgs.librewolf}";
             
             # quit niri
             "Mod+Shift+E".quit = {};
