@@ -4,43 +4,28 @@ Dendritic modular nix setup with flake parts and wraps.
 Aim is to make something modular and easy to setup on
 multiple hardware. 
 
-## Kinda functional
+## Todo or fix:
 
-- nvim (birdeehub template ready to tweak) (impure config for faster edits)
-- niri, noctalia (wrap)
-- kitty terminal (wrap) 
-- fish shell (wrap)
-- steam
-- gtk theme
-- browsers: librewolf (firefox), helium (flake)(chromium)
-- ly dm
-
-## Fix:
-
-- messy files 
-- messy file structure
+- using wrappermodules properly 
+- fix messy file structure
+- have some sane defaults and abstractions in desktop
 - actually using nh wrap
 - rare clipboard issue with kitty-nvim combo
-
-
-## Todo
-
-- nvim customization
+- discord opens links weird
 - hjem for user support
 - additional user config options
 - git wrap
-- nix helper pkgs (statix, manix, nix-inspect, nh wrap)
-- secrets
-- proton: vpn, mail, pass
-- secureboot
-- limine?
 - multiple hosts
+- Stylix (with hjem) seems like a pain
 
 ### Maybe
 
 - maybe btrfs with luks, possible with disko. Tricky.
+- limine?
+- secureboot
+- secrets
+- theme switching
 
 ### Unlikely
-- Stylix (with hjem) seems like a pain
 - impermanence
 
