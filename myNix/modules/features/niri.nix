@@ -55,6 +55,12 @@
 
           prefer-no-csd = { };
 
+          gestures = {
+            hot-corners = {
+              off = { };
+            };
+          };
+
           layout = {
             center-focused-column = "never";
             gaps = 5;
@@ -92,15 +98,15 @@
             "Mod+Shift+E".quit = {};
             
             # workspace window
-            "Mod+H".focus-column-left = { };
-            "Mod+L".focus-column-right = { };
-            "Mod+K".focus-window-up = { };
-            "Mod+J".focus-window-down = { };
+            "Mod+H".move-column-left = { };
+            "Mod+L".move-column-right = { };
+            "Mod+K".move-workspace-up = { };
+            "Mod+J".move-workspace-down = { };
 
-            "Mod+Left".move-column-left = { };
-            "Mod+Right".move-column-right = { };
-            "Mod+Up".move-window-up = { };
-            "Mod+Down".move-window-down = { };
+            "Mod+Left".focus-column-left = { };
+            "Mod+Right".focus-column-right = { };
+            "Mod+Up".focus-workspace-up = { };
+            "Mod+Down".focus-workspace-down = { };
 
             "Mod+1".focus-workspace = "w0";
             "Mod+2".focus-workspace = "w1";
