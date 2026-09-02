@@ -5,7 +5,7 @@
       options.preferences = {
         username = lib.mkOption {
           type = lib.types.str;
-          default = "mixis";
+          default = "nixis";
         };
         colorScheme = lib.mkOption {
           type = lib.types.str;

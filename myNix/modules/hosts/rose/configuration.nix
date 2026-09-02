@@ -7,6 +7,7 @@
       imports = [
         self.nixosModules.roseHardware
         self.nixosModules.base
+        self.nixosModules.roseOptions
         self.nixosModules.general
         self.nixosModules.desktop
         self.nixosModules.gaming
