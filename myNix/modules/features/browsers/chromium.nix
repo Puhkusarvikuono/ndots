@@ -5,6 +5,13 @@
     {
       programs.chromium = {
         enable = true;
+        initialPrefs = {
+          "browser" = {
+            "theme" = {
+              "follows_system_colors" = true;
+            };
+          };
+        };
         extraOpts = {
             "AudioSandboxEnabled" = false;
             "AutofillAddressEnabled" = false;

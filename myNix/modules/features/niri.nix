@@ -20,6 +20,9 @@
     {
       packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
         inherit pkgs;
+        extraSettings = [
+          { include = [ { optional = true; } "~/.config/niri/noctalia.kdl" ]; }
+        ];
         settings = {
           spawn-at-startup = [
             (lib.getExe self'.packages.myNoctalia)
@@ -98,15 +101,28 @@
             "Mod+Shift+E".quit = {};
             
             # workspace window
-            "Mod+H".move-column-left = { };
-            "Mod+L".move-column-right = { };
-            "Mod+K".move-workspace-up = { };
-            "Mod+J".move-workspace-down = { };
+            "Mod+Left".move-column-left = { };
+            "Mod+Right".move-column-right = { };
+            "Mod+Up".move-workspace-up = { };
+            "Mod+Down".move-workspace-down = { };
 
-            "Mod+Left".focus-column-left = { };
-            "Mod+Right".focus-column-right = { };
-            "Mod+Up".focus-workspace-up = { };
-            "Mod+Down".focus-workspace-down = { };
+            "Mod+H".focus-column-left = { };
+            "Mod+L".focus-column-right = { };
+            "Mod+K".focus-workspace-up = { };
+            "Mod+J".focus-workspace-down = { };
+
+            "Mod+Shift+H".focus-monitor-left = { };
+            "Mod+Shift+L".focus-monitor-right = { };
+
+            # workspace monitor
+
+            "Mod+Shift+Left".move-window-to-monitor-left = { };
+            "Mod+Shift+Right".move-window-to-monitor-right = { };
+
+            "Mod+Ctrl+Shift+Left".move-workspace-to-monitor-left = { };
+            "Mod+Ctrl+Shift+Right".move-workspace-to-monitor-right = { };
+
+            # workspace switching
 
             "Mod+1".focus-workspace = "w0";
             "Mod+2".focus-workspace = "w1";
