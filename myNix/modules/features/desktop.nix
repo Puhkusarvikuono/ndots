@@ -6,6 +6,7 @@
       imports = [
         self.nixosModules.firefox
         self.nixosModules.chromium
+        self.nixosModules.noctalia
       ];
 
       fonts.packages = with pkgs; [
@@ -23,7 +24,10 @@
       };
 
       services.upower.enable = true;
+      services.power-profiles-daemon.enable = true;
       security.polkit.enable = true;
+      services.udisks2.enable = true;
+      services.gvfs.enable = true;
       hardware = {
         enableAllFirmware = true;
         bluetooth.enable = true;

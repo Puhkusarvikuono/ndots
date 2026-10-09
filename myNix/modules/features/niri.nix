@@ -25,7 +25,7 @@
         ];
         settings = {
           spawn-at-startup = [
-            (lib.getExe self'.packages.myNoctalia)
+            "noctalia"
           ];
           spawn-sh-at-startup = [
             "protonvpn-app"
@@ -89,8 +89,17 @@
             "Mod+C".center-column = { };
             "Mod+Shift+K".show-hotkey-overlay = { };
 
+            # Noctalia
+
+            # Lock
+
+            "Mod+Shift+Return".spawn-sh = "noctalia msg session lock";
+            
+
             # app launcher
-            "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
+            "Mod+Space".spawn-sh = "noctalia msg panel-toggle launcher";
+            "Mod+S".spawn-sh = "noctalia msg panel-toggle control-center";
+            "Mod+Comma".spawn-sh = "noctalia msg settings-toggle";
             
             "Mod+O".spawn-sh = "obsidian";
             "Mod+B".spawn-sh = "${lib.getExe pkgs.brave}";
@@ -130,9 +139,11 @@
             "Mod+4".focus-workspace = "w3";
             "Mod+5".focus-workspace = "w4";
 
-            "XF86AudioRaiseVolume".spawn-sh = "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
-            "XF86AudioLowerVolume".spawn-sh = "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-";
-            "XF86AudioMute".spawn-sh = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
+            "XF86AudioRaiseVolume".spawn-sh = "noctalia msg volume-up"; 
+            "XF86AudioLowerVolume".spawn-sh = "noctalia msg volume-down";
+            "XF86AudioMute".spawn-sh = "noctalia msg volume-mute";
+            "XF86MonBrightnessUp".spawn-sh = "noctalia msg brightness-up";
+            "XF86MonBrightnessDown".spawn-sh = "noctalia msg brightness-down";
 
             "Mod+Shift+1".move-column-to-workspace = "w0";
             "Mod+Shift+2".move-column-to-workspace = "w1";

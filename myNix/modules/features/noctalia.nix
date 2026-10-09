@@ -1,11 +1,16 @@
 { self, inputs, ... }:
 {
-  perSystem =
-    { pkgs, ... }:
+
+  flake.nixosModules.noctalia =
+    { pkgs, libs, ... }:
     {
-      packages.myNoctalia = inputs.wrapper-modules.wrappers.noctalia-shell.wrap {
-        inherit pkgs;
-        settings = (builtins.fromJSON (builtins.readFile ./noctalia.json)).settings;
+      imports = [
+        inputs.noctalia.nixosModules.default
+      ];
+
+      programs.noctalia = {
+        enable = true;
+        recommendedServices.enable = true;
       };
     };
 }

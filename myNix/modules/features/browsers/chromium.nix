@@ -27,6 +27,7 @@
             "BraveP3AEnabled" = false;
             "BravePlaylistEnabled" = false;
             "DnsOverHttpsMode" = "secure";
+            "DnsOverHttpsTemplates" = "https://cloudflare-dns.com/dns-query";
             "MetricsReportingEnabled" = false;
             "PasswordManagerEnabled" = false;
             "SafeBrowsingExtendedReportingEnabled" = false;

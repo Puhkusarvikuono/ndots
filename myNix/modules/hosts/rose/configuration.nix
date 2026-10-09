@@ -21,7 +21,7 @@
 
       services.displayManager.ly.enable = true;
       services.thermald.enable = true;
-      services.auto-cpufreq.enable = true;
+      #      services.auto-cpufreq.enable = true;
 
       hardware.graphics = {
         enable = true;
