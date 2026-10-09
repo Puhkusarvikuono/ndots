@@ -7,6 +7,7 @@
       imports = [
         self.nixosModules.ancientHardware
         self.nixosModules.base
+        self.nixosModules.ancientOptions
         self.nixosModules.general
         self.nixosModules.desktop
         self.nixosModules.gaming
