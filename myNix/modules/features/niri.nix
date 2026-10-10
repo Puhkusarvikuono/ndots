@@ -31,6 +31,11 @@
             "protonvpn-app"
           ];
 
+          cursor = {
+            xcursor-theme = "Bibata-Modern-Classic";
+            xcursor-size = 25;
+          };
+
           xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
 
           input = {

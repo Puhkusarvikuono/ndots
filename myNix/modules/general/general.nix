@@ -6,7 +6,9 @@
       imports = [
         self.nixosModules.nix
         self.nixosModules.hjem
-        self.nixosModules.stylix
+        self.nixosModules.xdg
+        self.nixosModules.gtk
+        self.nixosModules.assets
       ];
 
     users.users.${config.preferences.username} = {

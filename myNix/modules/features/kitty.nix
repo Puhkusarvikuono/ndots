@@ -27,6 +27,9 @@
 
           cursor_trail = 3;
         };
+        extraConfig = ''
+          include ~/.config/kitty/themes/noctalia.conf
+        '';
       };
     };
 }

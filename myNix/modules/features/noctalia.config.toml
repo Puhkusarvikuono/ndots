@@ -16,7 +16,8 @@ order = [ "mybar" ]
         "brightness",
         "battery",
         "control-center",
-        "session"
+        "session",
+        "theme-switcher"
     ]
     font_scale = 0.92999998666346073
     font_weight = 600
@@ -86,6 +87,9 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
 [nightlight]
 enabled = true
 
+[plugins]
+enabled = [ "theblackdon/theme-switcher" ]
+
 [shell]
 corner_radius_scale = 0.45000000670552254
 niri_overview_type_to_launch_enabled = true
@@ -112,21 +116,53 @@ screen_time_enabled = true
 
 [theme]
 builtin = "Rosé Pine"
+community_palette = "Oxocarbon"
+mode = "dark"
+shell_mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
 
 [wallpaper]
 directory = "/home/mixis/.config/backgrounds"
 
     [wallpaper.automation]
-    enabled = true
+    enabled = false
 
     [wallpaper.default]
-    path = "/home/mixis/.config/backgrounds/rocket.png"
+    path = "/home/mixis/.config/backgrounds/rosepine3.jpg"
 
     [wallpaper.last]
-    path = "/home/mixis/.config/backgrounds/rocket.png"
+    path = "/home/mixis/.config/backgrounds/rosepine3.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/mixis/.config/backgrounds/rocket.png"
+    path = "/home/mixis/.config/backgrounds/rosepine3.jpg"
+
+    [[wallpaper.favorite]]
+    path = "/home/mixis/.config/backgrounds/acrylic.jpg"
+
+    [[wallpaper.favorite]]
+    builtin_palette = "Rosé Pine"
+    palette_source = "builtin"
+    path = "/home/mixis/.config/backgrounds/b-241.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    builtin_palette = "Eldritch"
+    palette_source = "builtin"
+    path = "/home/mixis/.config/backgrounds/b-754.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    builtin_palette = "Rosé Pine"
+    palette_source = "builtin"
+    path = "/home/mixis/.config/backgrounds/b-776.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    path = "/home/mixis/.config/backgrounds/rosepine.jpg"
 
 [widget.brightness]
 enabled = false
@@ -150,6 +186,9 @@ show_value = false
 
 [widget.temp]
 show_value = false
+
+[widget.theme-switcher]
+type = "theblackdon/theme-switcher:theme-switcher"
 
 [widget.volume]
 show_label = false

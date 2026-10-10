@@ -18,169 +18,291 @@
 
       hjem = {
         users.${username}.files = {
+          ".local/share/noctalia/plugins/data/theblackdon/theme-switcher/themes.json".text = ''
+            {
+  "lastAppliedId": "rose-pine-2",
+  "themes": [
+    {
+      "id": "rose-pine-2",
+      "palette": "Rosé Pine",
+      "screenshotPath": "",
+      "source": "builtin",
+      "title": "Rose Pine",
+      "wallpaperIndex": 2,
+      "wallpaperScheme": "m3-content",
+      "wallpapers": [
+        "/home/mixis/.config/backgrounds/rosepine1.jpg",
+        "/home/mixis/.config/backgrounds/rosepine2.jpg",
+        "/home/mixis/.config/backgrounds/rosepine3.jpg"
+      ]
+    },
+    {
+      "id": "nord",
+      "palette": "Nord",
+      "screenshotPath": "",
+      "source": "builtin",
+      "title": "Nord",
+      "wallpaperIndex": 0,
+      "wallpaperScheme": "m3-content",
+      "wallpapers": [
+        "/home/mixis/.config/backgrounds/nord2.jpg"
+      ]
+    },
+    {
+      "id": "gruvbox",
+      "palette": "Gruvbox",
+      "screenshotPath": "",
+      "source": "builtin",
+      "title": "Gruvbox",
+      "wallpaperIndex": 0,
+      "wallpaperScheme": "m3-content",
+      "wallpapers": [
+        "/home/mixis/.config/backgrounds/gruvbox1.jpg"
+      ]
+    },
+    {
+      "id": "catppuccin",
+      "palette": "Catppuccin",
+      "screenshotPath": "",
+      "source": "builtin",
+      "title": "catppuccin",
+      "wallpaperIndex": 1,
+      "wallpaperScheme": "m3-content",
+      "wallpapers": [
+        "/home/mixis/.config/backgrounds/catppuccin1.png",
+        "/home/mixis/.config/backgrounds/catppuccin2.jpg"
+      ]
+    },
+    {
+      "id": "tokyo-night",
+      "palette": "Tokyo-Night",
+      "screenshotPath": "",
+      "source": "builtin",
+      "title": "tokyo night",
+      "wallpaperIndex": 2,
+      "wallpaperScheme": "m3-content",
+      "wallpapers": [
+        "/home/mixis/.config/backgrounds/tokyonight1.png",
+        "/home/mixis/.config/backgrounds/tokyonight2.jpg",
+        "/home/mixis/.config/backgrounds/cyberpunk.jpg"
+      ]
+    },
+    {
+      "id": "dracula",
+      "palette": "Dracula",
+      "screenshotPath": "",
+      "source": "builtin",
+      "title": "dracula",
+      "wallpaperIndex": 0,
+      "wallpaperScheme": "m3-content",
+      "wallpapers": [
+        "/home/mixis/.config/backgrounds/dracula.png",
+        "/home/mixis/.config/backgrounds/dracula.png"
+      ]
+    }
+  ],
+  "version": 1
+}
+
+          '';
           ".config/noctalia/config.toml".text = ''
-            [bar]
-            order = [ "mybar" ]
+[bar]
+order = [ "mybar" ]
 
-                [bar.mybar]
-                background_opacity = 0.91999997943639755
-                center = [ "group:g1" ]
-                end = [
-                    "media",
-                    "weather",
-                    "tray",
-                    "notifications",
-                    "clipboard",
-                    "network",
-                    "bluetooth",
-                    "volume",
-                    "brightness",
-                    "battery",
-                    "control-center",
-                    "session"
-                ]
-                font_scale = 0.92999998666346073
-                font_weight = 600
-                margin_ends = 0
-                panel_overlap = 2
-                radius = 0
-                scale = 0.95000000670552254
-                shadow = false
-                start = [ "sysmon", "ram", "temp", "network_rx", "spacer_2", "active_window" ]
-                thickness = 28
-                widget_spacing = 8
+    [bar.mybar]
+    background_opacity = 0.91999997943639755
+    center = [ "group:g1" ]
+    end = [
+        "media",
+        "weather",
+        "tray",
+        "notifications",
+        "clipboard",
+        "network",
+        "bluetooth",
+        "volume",
+        "brightness",
+        "battery",
+        "control-center",
+        "session",
+        "theme-switcher"
+    ]
+    font_scale = 0.92999998666346073
+    font_weight = 600
+    margin_ends = 0
+    panel_overlap = 2
+    radius = 0
+    scale = 0.95000000670552254
+    shadow = false
+    start = [ "sysmon", "ram", "temp", "network_rx", "spacer_2", "active_window" ]
+    thickness = 28
+    widget_spacing = 8
 
-                    [[bar.mybar.capsule_group]]
-                    accordion = false
-                    accordion_direction = "end"
-                    border_width = 1.0
-                    enabled = true
-                    fill = "surface_variant"
-                    id = "g1"
-                    members = [ "clock", "workspaces" ]
-                    opacity = 1.0
-                    padding = 6.0
+        [[bar.mybar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "clock", "workspaces" ]
+        opacity = 1.0
+        padding = 6.0
 
-            [desktop_widgets]
-            enabled = false
+[desktop_widgets]
+enabled = false
 
-            [location]
-            address = "Oulu, Finland"
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
 
-            [lockscreen_widgets]
-            enabled = false
-            schema_version = 2
-            widget_order = [ "lockscreen-login-box@eDP-1" ]
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
 
-                [lockscreen_widgets.grid]
-                cell_size = 16
-                major_interval = 4
-                visible = true
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 823.0
+    cy = 847.0
+    output = "eDP-1"
+    placement_height = 1029.0
+    placement_width = 1646.0
+    rotation = 0.0
+    type = "login_box"
 
-                [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
-                box_height = 196.0
-                box_width = 810.0
-                cx = 823.0
-                cy = 847.0
-                output = "eDP-1"
-                placement_height = 1029.0
-                placement_width = 1646.0
-                rotation = 0.0
-                type = "login_box"
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
-                    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-                    background_color = "surface_variant"
-                    background_opacity = 0.88
-                    background_radius = 12.0
-                    center_password_text = false
-                    input_opacity = 1.0
-                    input_radius = 6.0
-                    layout = "regular"
-                    show_caps_lock = true
-                    show_keyboard_layout = true
-                    show_login_button = true
-                    show_media = true
-                    show_session_buttons = true
-                    show_unlock_hint = true
-                    show_weather = true
+[nightlight]
+enabled = true
 
-            [nightlight]
-            enabled = true
+[plugins]
+enabled = [ "theblackdon/theme-switcher" ]
 
-            [shell]
-            corner_radius_scale = 0.45000000670552254
-            niri_overview_type_to_launch_enabled = true
-            screen_time_enabled = true
+[shell]
+corner_radius_scale = 0.45000000670552254
+niri_overview_type_to_launch_enabled = true
+screen_time_enabled = true
 
-                [shell.animation]
-                enabled = false
+    [shell.animation]
+    enabled = false
 
-                [shell.launcher]
-                compact = true
+    [shell.launcher]
+    compact = true
 
-                    [shell.launcher.providers.session]
-                    global = true
+        [shell.launcher.providers.session]
+        global = true
 
-                [shell.panel]
-                launcher_placement = "attached"
-                launcher_position = "top_center"
-                open_near_click_control_center = true
-                open_near_click_session = true
-                open_near_click_wallpaper = true
+    [shell.panel]
+    launcher_placement = "attached"
+    launcher_position = "top_center"
+    open_near_click_control_center = true
+    open_near_click_session = true
+    open_near_click_wallpaper = true
 
-                [shell.session]
-                grid = true
+    [shell.session]
+    grid = true
 
-            [theme]
-            builtin = "Rosé Pine"
+[theme]
+builtin = "Rosé Pine"
+community_palette = "Oxocarbon"
+mode = "dark"
+shell_mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
 
-            [wallpaper]
-            directory = "/home/${username}/.config/backgrounds"
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
 
-                [wallpaper.automation]
-                enabled = true
+[wallpaper]
+directory = "/home/mixis/.config/backgrounds"
 
-                [wallpaper.default]
-                path = "/home/${username}/.config/backgrounds/rocket.png"
+    [wallpaper.automation]
+    enabled = false
 
-                [wallpaper.last]
-                path = "/home/${username}/.config/backgrounds/rocket.png"
+    [wallpaper.default]
+    path = "/home/mixis/.config/backgrounds/rosepine3.jpg"
 
-                [wallpaper.monitors.eDP-1]
-                path = "/home/${username}/.config/backgrounds/rocket.png"
+    [wallpaper.last]
+    path = "/home/mixis/.config/backgrounds/rosepine3.jpg"
 
-            [widget.brightness]
-            enabled = false
-            show_label = false
+    [wallpaper.monitors.eDP-1]
+    path = "/home/mixis/.config/backgrounds/rosepine3.jpg"
 
-            [widget.clock]
-            scale = 1.1500000000000001
+    [[wallpaper.favorite]]
+    path = "/home/mixis/.config/backgrounds/acrylic.jpg"
 
-            [widget.media]
-            hide_when_no_media = true
+    [[wallpaper.favorite]]
+    builtin_palette = "Rosé Pine"
+    palette_source = "builtin"
+    path = "/home/mixis/.config/backgrounds/b-241.jpg"
+    theme_mode = "dark"
 
-            [widget.network_rx]
-            label_min_width = 61
+    [[wallpaper.favorite]]
+    builtin_palette = "Eldritch"
+    palette_source = "builtin"
+    path = "/home/mixis/.config/backgrounds/b-754.jpg"
+    theme_mode = "dark"
 
-            [widget.spacer_2]
-            length = 48
-            type = "spacer"
+    [[wallpaper.favorite]]
+    builtin_palette = "Rosé Pine"
+    palette_source = "builtin"
+    path = "/home/mixis/.config/backgrounds/b-776.jpg"
+    theme_mode = "dark"
 
-            [widget.sysmon]
-            show_value = false
+    [[wallpaper.favorite]]
+    path = "/home/mixis/.config/backgrounds/rosepine.jpg"
 
-            [widget.temp]
-            show_value = false
+[widget.brightness]
+enabled = false
+show_label = false
 
-            [widget.volume]
-            show_label = false
+[widget.clock]
+scale = 1.1500000000000001
 
-            [widget.workspaces]
-            font_scale = 0.85000000000000009
-            hide_when_empty = true
-            labels_only_when_occupied = true
-            show_all_outputs = true
+[widget.media]
+hide_when_no_media = true
 
+[widget.network_rx]
+label_min_width = 61
+
+[widget.spacer_2]
+length = 48
+type = "spacer"
+
+[widget.sysmon]
+show_value = false
+
+[widget.temp]
+show_value = false
+
+[widget.theme-switcher]
+type = "theblackdon/theme-switcher:theme-switcher"
+
+[widget.volume]
+show_label = false
+
+[widget.workspaces]
+font_scale = 0.85000000000000009
+hide_when_empty = true
+labels_only_when_occupied = true
+show_all_outputs = true
           '';
         };
     };

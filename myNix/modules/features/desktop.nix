@@ -77,6 +77,7 @@
         nautilus
         man
         eza
+        bibata-cursors
         self.packages.${pkgs.stdenv.hostPlatform.system}.kitty
       ];
 

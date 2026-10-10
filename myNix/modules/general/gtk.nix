@@ -30,6 +30,8 @@
       pkgs.rose-pine-icon-theme
       pkgs.gtk3
       pkgs.gtk4
+      pkgs.adw-gtk3
+      pkgs.glib
     ];
   };
 }

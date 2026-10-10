@@ -9,6 +9,7 @@
           "browser" = {
             "theme" = {
               "follows_system_colors" = true;
+              "system_theme" = true;
             };
           };
         };
