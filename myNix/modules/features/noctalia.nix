@@ -18,7 +18,7 @@
 
       hjem = {
         users.${username}.files = {
-          ".local/share/noctalia/plugins/data/theblackdon/theme-switcher/themes.json".text = ''
+          ".local/state/noctalia/plugins/data/theblackdon/theme-switcher/themes.json".text = ''
             {
   "lastAppliedId": "rose-pine-2",
   "themes": [
@@ -31,9 +31,9 @@
       "wallpaperIndex": 2,
       "wallpaperScheme": "m3-content",
       "wallpapers": [
-        "/home/mixis/.config/backgrounds/rosepine1.jpg",
-        "/home/mixis/.config/backgrounds/rosepine2.jpg",
-        "/home/mixis/.config/backgrounds/rosepine3.jpg"
+        "/home/${username}/.config/backgrounds/rosepine1.jpg",
+        "/home/${username}/.config/backgrounds/rosepine2.jpg",
+        "/home/${username}/.config/backgrounds/rosepine3.jpg"
       ]
     },
     {
@@ -45,7 +45,7 @@
       "wallpaperIndex": 0,
       "wallpaperScheme": "m3-content",
       "wallpapers": [
-        "/home/mixis/.config/backgrounds/nord2.jpg"
+        "/home/${username}/.config/backgrounds/nord2.jpg"
       ]
     },
     {
@@ -57,7 +57,7 @@
       "wallpaperIndex": 0,
       "wallpaperScheme": "m3-content",
       "wallpapers": [
-        "/home/mixis/.config/backgrounds/gruvbox1.jpg"
+        "/home/${username}/.config/backgrounds/gruvbox1.jpg"
       ]
     },
     {
@@ -69,8 +69,8 @@
       "wallpaperIndex": 1,
       "wallpaperScheme": "m3-content",
       "wallpapers": [
-        "/home/mixis/.config/backgrounds/catppuccin1.png",
-        "/home/mixis/.config/backgrounds/catppuccin2.jpg"
+        "/home/${username}/.config/backgrounds/catppuccin1.png",
+        "/home/${username}/.config/backgrounds/catppuccin2.jpg"
       ]
     },
     {
@@ -82,9 +82,9 @@
       "wallpaperIndex": 2,
       "wallpaperScheme": "m3-content",
       "wallpapers": [
-        "/home/mixis/.config/backgrounds/tokyonight1.png",
-        "/home/mixis/.config/backgrounds/tokyonight2.jpg",
-        "/home/mixis/.config/backgrounds/cyberpunk.jpg"
+        "/home/${username}/.config/backgrounds/tokyonight1.png",
+        "/home/${username}/.config/backgrounds/tokyonight2.jpg",
+        "/home/${username}/.config/backgrounds/cyberpunk.jpg"
       ]
     },
     {
@@ -96,8 +96,8 @@
       "wallpaperIndex": 0,
       "wallpaperScheme": "m3-content",
       "wallpapers": [
-        "/home/mixis/.config/backgrounds/dracula.png",
-        "/home/mixis/.config/backgrounds/dracula.png"
+        "/home/${username}/.config/backgrounds/dracula.png",
+        "/home/${username}/.config/backgrounds/dracula.png"
       ]
     }
   ],
@@ -231,43 +231,43 @@ wallpaper_scheme = "m3-content"
     builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
 
 [wallpaper]
-directory = "/home/mixis/.config/backgrounds"
+directory = "/home/${username}/.config/backgrounds"
 
     [wallpaper.automation]
     enabled = false
 
     [wallpaper.default]
-    path = "/home/mixis/.config/backgrounds/rosepine3.jpg"
+    path = "/home/${username}/.config/backgrounds/rosepine3.jpg"
 
     [wallpaper.last]
-    path = "/home/mixis/.config/backgrounds/rosepine3.jpg"
+    path = "/home/${username}/.config/backgrounds/rosepine3.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/mixis/.config/backgrounds/rosepine3.jpg"
+    path = "/home/${username}/.config/backgrounds/rosepine3.jpg"
 
     [[wallpaper.favorite]]
-    path = "/home/mixis/.config/backgrounds/acrylic.jpg"
+    path = "/home/${username}/.config/backgrounds/acrylic.jpg"
 
     [[wallpaper.favorite]]
     builtin_palette = "Rosé Pine"
     palette_source = "builtin"
-    path = "/home/mixis/.config/backgrounds/b-241.jpg"
+    path = "/home/${username}/.config/backgrounds/b-241.jpg"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     builtin_palette = "Eldritch"
     palette_source = "builtin"
-    path = "/home/mixis/.config/backgrounds/b-754.jpg"
+    path = "/home/${username}/.config/backgrounds/b-754.jpg"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     builtin_palette = "Rosé Pine"
     palette_source = "builtin"
-    path = "/home/mixis/.config/backgrounds/b-776.jpg"
+    path = "/home/${username}/.config/backgrounds/b-776.jpg"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
-    path = "/home/mixis/.config/backgrounds/rosepine.jpg"
+    path = "/home/${username}/.config/backgrounds/rosepine.jpg"
 
 [widget.brightness]
 enabled = false
