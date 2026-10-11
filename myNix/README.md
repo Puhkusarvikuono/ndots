@@ -6,17 +6,12 @@ multiple hardware.
 
 ## Todo or fix:
 
-- using wrappermodules properly 
+- using wrappermodules properly
+- switching to nixcommunity wrappermodules and ditching lassulus
 - fix messy file structure
+- fix messy wraps
 - have some sane defaults and abstractions in desktop
-- actually using nh wrap
-- rare clipboard issue with kitty-nvim combo
-- discord opens links weird
-- hjem for user support
-- additional user config options
 - git wrap
-- multiple hosts
-- Stylix (with hjem) seems like a pain
 
 ### Maybe
 
@@ -24,8 +19,12 @@ multiple hardware.
 - limine?
 - secureboot
 - secrets
-- theme switching
 
 ### Unlikely
 - impermanence
 
+### Testing
+
+- Does work on a new system
+- noctalia handles theming and theme switching
+- wallpapers and themes built in with nix
