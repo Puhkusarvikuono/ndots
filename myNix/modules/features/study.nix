@@ -4,7 +4,7 @@
     { pkgs, ... }:
     {
       environment.systemPackages = [
-        pkgs.libreoffice-qt
+        pkgs.libreoffice
       ];
 
     };
